@@ -5,7 +5,7 @@ function [n0] = finding_no(index_value)
 % Refractive Index(recommented)
 
  L = 10e-3;
- lambda = 650*10.^-9;
+ lambda = 650e-9;
  phi = phase_diff;
  n0 = (phi*lambda)/(2*pi*L);
  

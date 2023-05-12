@@ -1,9 +1,13 @@
 % 
-x = 901;
-y = 555;
+% x = 901;
+% y = 555;
+% x = 901;
+% y = 565;
 % 
-% x1 = 1126;
-% y1 = 107;
+x1 = 901;
+y1 = 572;
+% x1 = 901;
+% y1 = 585;
 % 
 % x2 = 1126;
 % y2 = 107;
@@ -17,8 +21,8 @@ y = 555;
 % % 0.5 ul
 % 
 % 
-figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
-           datatip(f, x,y)
+% figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
+%            datatip(f, x,y)
 % figure('Name','Phase difference_0.5ul_min1_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_min1_sol_uwphasediff.jpg");
 %            datatip(f, x,y)
 % figure('Name','Phase difference_0.5ul_min5_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_min5_sol_uwphasediff.jpg");
@@ -28,8 +32,8 @@ figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5u
 % % 1 ul
 % 
 % 
-% figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
-%            datatip(f, x1,y1)
+figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
+           datatip(f, x1,y1)
 % figure('Name','Phase difference_1ul_min1_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_min1_sol_uwphasediff.jpg");
 %            datatip(f, x1,y1)
 % figure('Name','Phase difference_1ul_min5_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_min5_sol_uwphasediff.jpg");
