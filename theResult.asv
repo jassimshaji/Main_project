@@ -9,7 +9,7 @@
 % 50u
   D_50 = Thermaldiffusivity(901,535,901,554,"14","50");
 % 100u
-  D_100 = Thermaldiffusivity(901,541,901,558,"11","100");
+  D_100 = Thermaldiffusivity(901,542,901,529,"6","100");
 
 
 
