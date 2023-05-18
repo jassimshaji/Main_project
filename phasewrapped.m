@@ -8,17 +8,10 @@ img = imread(in);
 hologram = double(img(1:N,1:M,2));
 
 
-
 % Calculating Fourier transform and showing absolute value of the result
 
       spectrum = FT2Dc(hologram);
       spectrum_abs = abs(spectrum);
-
-
-%      figure('Name','Fourier spectrum');
-%      imshow(log(spectrum_abs), []);
-
-
 
 % Blocking the central part of the spectrum
 
@@ -35,18 +28,14 @@ for ii=1:N
     end
     end
 end
-%   figure;
-%   imshow(log(spectrum_abs1), []); 
-  % Blocking half of the spectrum
-
   spectrum_abs1(1:N/2,:) = 0;
-%   figure;
-%   imshow(log(spectrum_abs1), []); 
+
 
 % Finding the position of the side-band in the spectrum
 
 maximum = max(max(spectrum_abs1));
 [x0, y0] = find(spectrum_abs1==maximum);
+
 
 % Shifting the complex-valued spectrum to the center
 
@@ -61,8 +50,7 @@ for ii = 1:N-x0
         spectrum2(ii, jj) = spectrum(ii+x0,jj+y0); 
     end
 end
-% figure;
-% imshow(log(spectrum2), []); 
+
 
 % Selecting the central part of the complex-valued spectrum spectrum
 
@@ -78,17 +66,13 @@ for ii=1:N
     end
     end
 end
-% figure;
-% imshow(log(spectrum3), []);
+
 
 % Reconstruction by inverse Fourier transform
      
      reconstruction = IFT2Dc(spectrum3);
-     %rec_abs = abs(reconstruction);
      rec_phase = angle(reconstruction);
      
-
-
  % Saving reconstructed phase as JPG imagex
          
           p = rec_phase;

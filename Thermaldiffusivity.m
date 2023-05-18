@@ -4,8 +4,6 @@ t = 1;
 % phase diff
  index_value = index;
  phase_diff = (str2double(index_value)/255)*2*pi;
- disp("PHASE DIFFERENCE IS : ")
- disp(phase_diff)
 
 % Refractive Index(recommented)
 
@@ -14,8 +12,6 @@ t = 1;
  phi = phase_diff; 
  n = (phi*lambda)/(2*pi*L);
  n0 = finding_no(index);
- disp("THE N0 VALUE IS :");
- disp(n0);
  disp("THE DELTA_N VALUE IS :");
  disp(n);
 
@@ -40,26 +36,31 @@ t = 1;
 %Display data points in corresponding phasediff map
 
 if conc_val == "0.5"
+   disp("0.5ul")
    figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
    datatip(f, x1_val,y1_val)
    figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
    datatip(f, x2_val,y2_val)
 elseif conc_val == "1"
+    disp("1ul")
     figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
     datatip(f, x1_val,y1_val)
     figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
     datatip(f, x2_val,y2_val)
 elseif conc_val == "10"
+    disp("10ul")
     figure('Name','Phase difference_10ul_im_sol '); f = imshow("PhaseUnwrapped\10ul_withsol\Phasediff\Reconstructed_10ul_nopump_im_sol_uwphasediff.jpg");
     datatip(f, x1_val,y1_val)
     figure('Name','Phase difference_10ul_im_sol '); f = imshow("PhaseUnwrapped\10ul_withsol\Phasediff\Reconstructed_10ul_nopump_im_sol_uwphasediff.jpg");
     datatip(f, x2_val,y2_val)
 elseif conc_val == "50"
+     disp("50ul")
      figure('Name','Phase difference_50ul_im_sol '); f = imshow("PhaseUnwrapped\50ul_withsol\Phasediff\Reconstructed_50ul_nopump_im_sol_uwphasediff.jpg");
      datatip(f, x1_val,y1_val)
      figure('Name','Phase difference_50ul_im_sol '); f = imshow("PhaseUnwrapped\50ul_withsol\Phasediff\Reconstructed_50ul_nopump_im_sol_uwphasediff.jpg");
      datatip(f, x2_val,y2_val)
 elseif conc_val == "100"
+    disp("100ul")
      figure('Name','Phase difference_100ul_im_sol '); f = imshow("PhaseUnwrapped\100ul_withsol\Phasediff\Reconstructed_100ul_nopump_im_sol_uwphasediff.jpg");
      datatip(f, x1_val,y1_val)
      figure('Name','Phase difference_100ul_im_sol '); f = imshow("PhaseUnwrapped\100ul_withsol\Phasediff\Reconstructed_100ul_nopump_im_sol_uwphasediff.jpg");
