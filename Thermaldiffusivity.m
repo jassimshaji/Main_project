@@ -32,38 +32,40 @@ t = 1;
  D = (log(n/n0)+(2*r_dist*r_dist/w*w))/8*t;
  disp("THE THERMAL DIFFUSIVITY IS : ")
  disp(D)
+ 
 
 %Display data points in corresponding phasediff map
 
-if conc_val == "0.5"
-   disp("0.5ul")
-   figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
-   datatip(f, x1_val,y1_val)
-   figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
-   datatip(f, x2_val,y2_val)
-elseif conc_val == "1"
-    disp("1ul")
-    figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
-    datatip(f, x1_val,y1_val)
-    figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
-    datatip(f, x2_val,y2_val)
-elseif conc_val == "10"
-    disp("10ul")
-    figure('Name','Phase difference_10ul_im_sol '); f = imshow("PhaseUnwrapped\10ul_withsol\Phasediff\Reconstructed_10ul_nopump_im_sol_uwphasediff.jpg");
-    datatip(f, x1_val,y1_val)
-    figure('Name','Phase difference_10ul_im_sol '); f = imshow("PhaseUnwrapped\10ul_withsol\Phasediff\Reconstructed_10ul_nopump_im_sol_uwphasediff.jpg");
-    datatip(f, x2_val,y2_val)
-elseif conc_val == "50"
-     disp("50ul")
-     figure('Name','Phase difference_50ul_im_sol '); f = imshow("PhaseUnwrapped\50ul_withsol\Phasediff\Reconstructed_50ul_nopump_im_sol_uwphasediff.jpg");
-     datatip(f, x1_val,y1_val)
-     figure('Name','Phase difference_50ul_im_sol '); f = imshow("PhaseUnwrapped\50ul_withsol\Phasediff\Reconstructed_50ul_nopump_im_sol_uwphasediff.jpg");
-     datatip(f, x2_val,y2_val)
-elseif conc_val == "100"
-    disp("100ul")
-     figure('Name','Phase difference_100ul_im_sol '); f = imshow("PhaseUnwrapped\100ul_withsol\Phasediff\Reconstructed_100ul_nopump_im_sol_uwphasediff.jpg");
-     datatip(f, x1_val,y1_val)
-     figure('Name','Phase difference_100ul_im_sol '); f = imshow("PhaseUnwrapped\100ul_withsol\Phasediff\Reconstructed_100ul_nopump_im_sol_uwphasediff.jpg");
-     datatip(f, x2_val,y2_val)
-end
-
+% if conc_val == "0.5"
+%    disp("0.5ul")
+%    figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
+%    datatip(f, x1_val,y1_val)
+%    figure('Name','Phase difference_0.5ul_im_sol '); f = imshow("PhaseUnwrapped\0.5ul_withsol\Phasediff\Reconstructed_nopump_im_sol_uwphasediff.jpg");
+%    datatip(f, x2_val,y2_val)
+%    
+% elseif conc_val == "1"
+%     disp("1ul")
+%     figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
+%     datatip(f, x1_val,y1_val)
+%     figure('Name','Phase difference_1ul_im_sol '); f = imshow("PhaseUnwrapped\1ul_withsol\Phasediff\Reconstructed_1ul_nopump_im_sol_uwphasediff.jpg");
+%     datatip(f, x2_val,y2_val)
+% elseif conc_val == "10"
+%     disp("10ul")
+%     figure('Name','Phase difference_10ul_im_sol '); f = imshow("PhaseUnwrapped\10ul_withsol\Phasediff\Reconstructed_10ul_nopump_im_sol_uwphasediff.jpg");
+%     datatip(f, x1_val,y1_val)
+%     figure('Name','Phase difference_10ul_im_sol '); f = imshow("PhaseUnwrapped\10ul_withsol\Phasediff\Reconstructed_10ul_nopump_im_sol_uwphasediff.jpg");
+%     datatip(f, x2_val,y2_val)
+% elseif conc_val == "50"
+%      disp("50ul")
+%      figure('Name','Phase difference_50ul_im_sol '); f = imshow("PhaseUnwrapped\50ul_withsol\Phasediff\Reconstructed_50ul_nopump_im_sol_uwphasediff.jpg");
+%      datatip(f, x1_val,y1_val)
+%      figure('Name','Phase difference_50ul_im_sol '); f = imshow("PhaseUnwrapped\50ul_withsol\Phasediff\Reconstructed_50ul_nopump_im_sol_uwphasediff.jpg");
+%      datatip(f, x2_val,y2_val)
+% elseif conc_val == "100"
+%     disp("100ul")
+%      figure('Name','Phase difference_100ul_im_sol '); f = imshow("PhaseUnwrapped\100ul_withsol\Phasediff\Reconstructed_100ul_nopump_im_sol_uwphasediff.jpg");
+%      datatip(f, x1_val,y1_val)
+%      figure('Name','Phase difference_100ul_im_sol '); f = imshow("PhaseUnwrapped\100ul_withsol\Phasediff\Reconstructed_100ul_nopump_im_sol_uwphasediff.jpg");
+%      datatip(f, x2_val,y2_val)
+% end
+% 

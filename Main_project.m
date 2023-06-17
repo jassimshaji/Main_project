@@ -123,7 +123,7 @@ end
         
         p = rec_phase;
         p = (p - min(min(p)))/(max(max(p)) - min(min(p)));
-        imwrite (p, 'Reconstructed_sol_nopump_phase.jpg');
+        %imwrite (p, 'Reconstructed_sol_nopump_phase.jpg');
 
 
 

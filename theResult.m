@@ -1,31 +1,35 @@
-% the thermal diffusivity for each conc
-
-% 0.5
-  D_half = Thermaldiffusivity(901,555,901,565,"3","0.5");
-% 1u
-  D_1 = Thermaldiffusivity(901,572,901,585,"5","1");
-% 10u
-  D_10 = Thermaldiffusivity(901,562,901,579,"7","10");
-% 50u
-  D_50 = Thermaldiffusivity(901,535,901,554,"14","50");
-% 100u
-  D_100 = Thermaldiffusivity(901,541,901,558,"11","100");
-
-
-
-% volume fraction conversion
-  volume_fraction_5 = (0.5e-6/3e-3)*100 ;
-  volume_fraction_1 = (1e-6/3e-3)*100 ;
-  volume_fraction_10 = (10.5e-6/3e-3)*100 ;
-  volume_fraction_50 = (50.5e-6/3e-3)*100 ;
-  volume_fraction_100 = (100.5e-6/3e-3)*100 ;
-
-% plotting volume fraction vs thermal diffusivity
-
-  thermal_d = [D_half D_1 D_10 D_50 D_100];
-  vol_frac = [volume_fraction_5 volume_fraction_1 volume_fraction_10 volume_fraction_50 volume_fraction_100];
-  figure
-  plot(vol_frac,thermal_d,'r')
-  title("VOLUME FRACTION VS THERMAL DIFFUSIVITY")
-  xlabel('VOLUME FRACTION(%)')
-  ylabel("THERMAL DIFFUSIVITY(m²/s)")
+% % the thermal diffusivity for each conc
+% 
+% % 0.5
+   D_half = Thermaldiffusivity(901,555,901,565,"3","0.5");
+% % 1u
+%   D_1 = Thermaldiffusivity(901,572,901,585,"5","1");
+% % 10u
+%   D_10 = Thermaldiffusivity(901,562,901,579,"7","10");
+% % 50u
+%   D_50 = Thermaldiffusivity(901,535,901,554,"14","50");
+% % 100u
+%   D_100 = Thermaldiffusivity(901,541,901,558,"11","100");
+% 
+% 
+% 
+% % volume fraction conversion
+%   volume_fraction_5 = (0.5e-6/3e-3)*100 ;
+%   volume_fraction_1 = (1e-6/3e-3)*100 ;
+%   volume_fraction_10 = (10.5e-6/3e-3)*100 ;
+%   volume_fraction_50 = (50.5e-6/3e-3)*100 ;
+%   volume_fraction_100 = (100.5e-6/3e-3)*100 ;
+% 
+% % plotting volume fraction vs thermal diffusivity
+% 
+%   thermal_d = [D_half D_1 D_10 D_50 D_100];
+%   vol_frac = [volume_fraction_5 volume_fraction_1 volume_fraction_10 volume_fraction_50 volume_fraction_100];
+%   figure
+%   plot(vol_frac,thermal_d,'r')
+%   title("VOLUME FRACTION VS THERMAL DIFFUSIVITY")
+%   xlabel('VOLUME FRACTION(%)')
+%   ylabel("THERMAL DIFFUSIVITY(m²/s)")
+figure
+imshow("DSC_1466.bmp")
+figure
+imshow("DSC_1466.JPG")
